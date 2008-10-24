@@ -1,7 +1,7 @@
 %define date 20081023
 Name:       qedje
 Version:    0.4.0
-Release:    %mkrel 0.%date.1
+Release:    %mkrel 0.%date.2
 License:    GPL
 Group:      Development/KDE and Qt 
 Summary:    QEdje - Declarative language
@@ -11,6 +11,7 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: qt4-devel
 BuildRequires: kde4-macros
 BuildRequires: qzion-devel
+BuildRequires: eet-devel
 
 %description
 Edje is a declarative language that simplifies the development of 
