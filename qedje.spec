@@ -1,7 +1,7 @@
 %define date 20081023
 Name:       qedje
 Version:    0.4.0
-Release:    %mkrel 0.%date.3
+Release:    %mkrel 0.%date.4
 License:    GPL
 Group:      Development/KDE and Qt 
 Summary:    QEdje - Declarative language
@@ -22,19 +22,6 @@ very small memory footprint.
 %files
 %defattr(-,root,root)
 %_kde_bindir/qedje_viewer
-#-----------------------------------------------
-%package   devel
-Summary:   Devel stuff for kdebase 4
-Group:     Development/KDE and Qt
-
-%description  devel
-Devel packages needed to build qedje apps 
-
-%files devel
-%defattr(-,root,root)
-%_kde_includedir/*.h
-%_kde_libdir/pkgconfig/qedje.pc
-%_kde_libdir/libqedje.so
 
 #------------------------------------------------
 
@@ -53,6 +40,21 @@ qedje library.
 %defattr(-,root,root)
 %_kde_libdir/libqedje.so.%{libqedje_major}*
 
+#-----------------------------------------------
+
+%package   devel
+Summary:   Devel stuff for kdebase 4
+Group:     Development/KDE and Qt
+Requires:  %libqedje = %version
+
+%description  devel
+Devel packages needed to build qedje apps
+
+%files devel
+%defattr(-,root,root)
+%_kde_includedir/*.h
+%_kde_libdir/pkgconfig/qedje.pc
+%_kde_libdir/libqedje.so
 
 #------------------------------------------------
 
