@@ -1,7 +1,7 @@
 %define date 20081023
 Name:       qedje
 Version:    0.4.0
-Release:    %mkrel 0.%date.2
+Release:    %mkrel 0.%date.3
 License:    GPL
 Group:      Development/KDE and Qt 
 Summary:    QEdje - Declarative language
