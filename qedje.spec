@@ -1,16 +1,15 @@
-%define date 20081023
-Name:       qedje
-Version:    0.4.0
-Release:    %mkrel 0.%date.4
-License:    GPL
-Group:      Development/KDE and Qt 
-Summary:    QEdje - Declarative language
-Source:     http://dev.openbossa.org/qedje/downloads/source/%name/%name-%version.git%date.tar.bz2
-Url:        http://dev.openbossa.org/trac/qedje/
+Name: qedje
+Version: 0.4.0
+Release: %mkrel 1
+License: GPL
+Group: Development/KDE and Qt 
+Summary: QEdje - Declarative language
+Source: %name-%version.tar.gz
+Url: http://code.openbossa.org/projects/qedje
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: qt4-devel
 BuildRequires: kde4-macros
-BuildRequires: qzion-devel
+BuildRequires: qzion-devel >= 0.4.0-1
 BuildRequires: eet-devel
 
 %description
@@ -59,7 +58,7 @@ Devel packages needed to build qedje apps
 #------------------------------------------------
 
 %prep
-%setup -q -n %name
+%setup -q -n %name-mainline
 
 %build
 %cmake_qt4 -DBUILD_TOOLS=TRUE
