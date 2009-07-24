@@ -9,7 +9,7 @@ Url: http://code.openbossa.org/projects/qedje
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: qt4-devel
 BuildRequires: kde4-macros
-BuildRequires: qzion-devel >= 0.4.0-1
+BuildRequires: qzion-devel >= 0.4.0
 BuildRequires: eet-devel
 
 %description
