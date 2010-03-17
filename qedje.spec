@@ -1,10 +1,11 @@
 Name: qedje
 Version: 0.4.0
-Release: %mkrel 3
+Release: %mkrel 4
 License: GPL
 Group: Development/KDE and Qt 
 Summary: QEdje - Declarative language
 Source: %name-%version.tar.gz
+Patch0:       qedje-0.4.0-fix-install.patch
 Url: http://code.openbossa.org/projects/qedje
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: qt4-devel
@@ -59,6 +60,7 @@ Devel packages needed to build qedje apps
 
 %prep
 %setup -q -n %name-mainline
+%patch0 -p1
 
 %build
 %cmake_qt4 -DBUILD_TOOLS=TRUE
