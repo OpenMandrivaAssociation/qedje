@@ -1,6 +1,6 @@
 Name: qedje
 Version: 0.4.0
-Release: %mkrel 7
+Release: %mkrel 8
 License: GPL
 Group: Development/KDE and Qt 
 Summary: QEdje - Declarative language
@@ -73,3 +73,43 @@ make DESTDIR=%buildroot install
 
 %clean
 rm -rf %buildroot
+
+
+%changelog
+* Thu May 05 2011 Oden Eriksson <oeriksson@mandriva.com> 0.4.0-7mdv2011.0
++ Revision: 669379
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.4.0-6mdv2011.0
++ Revision: 607262
+- rebuild
+
+* Wed Mar 17 2010 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.4.0-4mdv2010.1
++ Revision: 524162
+- Fix install with new cmake
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - rebuilt for 2010.1
+
+* Tue Jul 07 2009 Helio Chissini de Castro <helio@mandriva.com> 0.4.0-2mdv2010.0
++ Revision: 393182
+- Rebuild against new eet
+
+* Sat Feb 28 2009 Helio Chissini de Castro <helio@mandriva.com> 0.4.0-1mdv2009.1
++ Revision: 345904
+- Update with new upstream final 0.4.0 package
+
+* Sun Dec 21 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.4.0-0.20081023.4mdv2009.1
++ Revision: 316948
+- Fix Requires
+
+* Sun Dec 21 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.4.0-0.20081023.3mdv2009.1
++ Revision: 316847
+- Rebuild  because of missing package
+
+* Fri Oct 24 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.4.0-0.20081023.2mdv2009.1
++ Revision: 296894
+- improve BuildRequires
+- import qedje
+
+
