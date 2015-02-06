@@ -1,6 +1,6 @@
 Name: qedje
 Version: 0.4.0
-Release: %mkrel 8
+Release: 9
 License: GPL
 Group: Development/KDE and Qt 
 Summary: QEdje - Declarative language
