@@ -6,7 +6,7 @@ Group: Development/KDE and Qt
 Summary: QEdje - Declarative language
 Source: %name-%version.tar.gz
 Patch0:       qedje-0.4.0-fix-install.patch
-Url: http://code.openbossa.org/projects/qedje
+Url: https://code.openbossa.org/projects/qedje
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: qt4-devel
 BuildRequires: kde4-macros
